@@ -21,5 +21,14 @@
             $result = $test_Queen->canAttack($input);
             $this->assertEquals(true, $result);
         }
+
+        function test_diagonal()
+        {
+            $test_Queen = new Queen;
+            $input = [4,2,1,5];
+
+            $result = $test_Queen->canAttack($input);
+            $this->assertEquals(true, $result);
+        }
     }
 ?>
