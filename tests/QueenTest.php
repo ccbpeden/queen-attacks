@@ -12,5 +12,14 @@
             $result = $test_Queen->canAttack($input);
             $this->assertEquals(false, $result);
         }
+
+        function test_sameColumnRow()
+        {
+            $test_Queen = new Queen;
+            $input = [2,3,2,4];
+
+            $result = $test_Queen->canAttack($input);
+            $this->assertEquals(true, $result);
+        }
     }
 ?>
